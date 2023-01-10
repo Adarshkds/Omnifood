@@ -6,6 +6,7 @@
 --Font Weight
 -Default: 400
 -700
+-600
 
 --Line Height 
 -Default: 1
@@ -39,7 +40,6 @@
 --Spacing System
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
-
 * {
   margin: 0;
   padding: 0;
@@ -52,21 +52,73 @@ html {
 
 body {
   font-weight: 400;
-  font-family: "inter", sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   color: #555;
+}
+
+/*** HEADER SECTION ***/
+.header {
+  background-color: #fdf2e9;
+  height: 9.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+.header-nav {
+  display: flex;
+  list-style: none;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.header-nav-nav:link,
+.header-nav-nav:visited {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+  transition: 0.5s;
+}
+
+.header-nav-nav:hover,
+.header-nav-nav:active {
+  color: #cf711f;
+}
+
+.nav-last:link,
+.nav-last:visited {
+  background-color: #e67e22;
+  padding: 1.2rem 2.4rem;
+  color: white;
+  border-radius: 0.8rem;
+}
+
+.nav-last:active,
+.nav-last:hover {
+  background-color: #cf711f;
 }
 
 /*** HERO SECTION ***/
 .section-hero {
   background-color: #fdf2e9;
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero {
   max-width: 130rem;
+  height: 100%;
   margin: 0 auto;
-  display: flex;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 9.6rem;
 }
@@ -136,10 +188,10 @@ body {
 }
 
 .hero-pfp {
-  width: 4.4rem;
+  width: 4.8rem;
   border-radius: 5rem;
   margin-right: -1.6rem;
-  border: 2px solid white;
+  border: 2px solid #fdf2e9;
 }
 
 .hero-pfp:last-child {
@@ -147,12 +199,14 @@ body {
 }
 
 .hero-delivered {
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .delivered-bold {
   color: #cf711f;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 1.8rem;
 }
+
+/*** HERO FEATURED-IN ***/
