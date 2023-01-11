@@ -1,66 +1,9 @@
-/* 
---- 01 TYPOGRAPHY ---
---Font Size(px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
---Font Weight
--Default: 400
--700
--600
-
---Line Height 
--Default: 1
--1.5
-
---- 02 COLORS ---
---Primary: 
--#e67e22
--#fdf2e9
-
---Tints:
-
---Shades:
-
---Accents: 
-
---Greys:
--#555
--#333
-
---- 03 SHADOWS ---
-
---- 04 BORDER-RADIUS ---
---Button
--0.8rem
-
---Pfp
--0.5rem
-
---- 05 WHITESPACE ---
---Spacing System
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-weight: 400;
-  font-family: "Rubik", sans-serif;
-  line-height: 1;
-  color: #555;
-}
-
+/* ******************** */
 /*** HEADER SECTION ***/
+/* ******************** */
 .header {
   background-color: #fdf2e9;
-  height: 9.6rem;
+  height: 9.6rem; /*height is used because we want to make header sticky*/
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,7 +17,7 @@ body {
 .header-nav {
   display: flex;
   list-style: none;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 
@@ -106,7 +49,9 @@ body {
   background-color: #cf711f;
 }
 
+/* ******************** */
 /*** HERO SECTION ***/
+/* ******************** */
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
@@ -115,12 +60,7 @@ body {
 .hero {
   max-width: 130rem;
   height: 100%;
-  margin: 0 auto;
-  padding: 0 3.2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 9.6rem;
 }
 
 .hero-img {
@@ -129,18 +69,11 @@ body {
 
 .hero-heading {
   font-size: 5.2rem;
-  color: #333;
-  line-height: 1.05;
-  margin-bottom: 3.2rem;
   font-family: "ubuntu", sans-serif;
-  font-weight: 700;
+  margin-bottom: 3.2rem;
 }
 
 .hero-description {
-  font-size: 2rem;
-  margin-bottom: 2.4rem;
-  /* letter-spacing: 1.5px; */
-  line-height: 1.5;
   margin-bottom: 4.8rem;
 }
 
@@ -148,7 +81,7 @@ body {
 .hero-btn:visited {
   display: inline-block;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   background-color: #e67e22;
   padding: 1.6rem 3.2rem;
@@ -209,4 +142,123 @@ body {
   font-size: 1.8rem;
 }
 
-/*** HERO FEATURED-IN ***/
+/* ******************** */
+/*** FEATURED-IN SECTION ***/
+/* ******************** */
+.section-featuredin {
+  padding: 4.8rem 0 3.2rem 0;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+.featured-head {
+  text-align: center;
+  padding-bottom: 2.4rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.featured-companies {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6.4rem;
+}
+
+.companies-logo {
+  height: 3.2rem;
+}
+
+/* ******************** */
+/*** HOW-IT-WORKS SECTION ***/
+/* ******************** */
+
+.how-it-works {
+  padding: 9.6rem 0;
+}
+
+.how-title {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #cf711f;
+  letter-spacing: 0.8px;
+  padding-bottom: 1.6rem;
+}
+
+.how-head {
+  margin-bottom: 9.6rem;
+}
+
+.how-text-app {
+  align-items: center;
+}
+
+.how-app {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.how-app-img {
+  width: 35%;
+}
+
+.how-app::before,
+.how-app::after {
+  display: block;
+  content: "";
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -999;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.how-app::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+}
+
+.how-text-head {
+  font-size: 8.6rem;
+  font-weight: 600;
+  padding-bottom: 1.2rem;
+  color: #ddd;
+}
+
+.how-text-subhead {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 3.2rem;
+  color: #333;
+}
+
+.how-text-para {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* ******************** */
+/*** MEALS SECTION ***/
+/* ******************** */
+.meals-title {
+  text-align: center;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #cf711f;
+  letter-spacing: 0.8px;
+  padding-bottom: 1.6rem;
+}
+
+.meals-head {
+  text-align: center;
+  margin-bottom: 9.6rem;
+}

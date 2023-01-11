@@ -5,17 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Great+Vibes&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
+
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/style.css">
+
   <title>Omnifood</title>
 </head>
 
 <body>
-  <section class="section-header">
+  <header class="section-header">
     <div class="header">
       <div class="header-logo">
         <img class="logo" src="img/omnifood-logo.png" alt="omnifood">
@@ -29,54 +32,113 @@
         <li> <a class="header-nav-nav nav-last" href="#">Try for free</a></li>
       </ul>
     </div>
-  </section>
+  </header>
 
-  <section class="section-hero">
-    <div class="hero">
-      <div class="hero-text-box">
-        <h1 class="hero-heading">
-          A healthy meal delivered to your door, every single day
-        </h1>
-        <p class="hero-description">
-          The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal
-          tastes and nutritional needs.
-        </p>
-        <a href="#" class="hero-btn">Start eating well</a>
-        <a href="#" class="hero-btn hero-btn-2">Learn more &darr;</a>
-        <div class="hero-delivery">
-          <div class="hero-people">
-            <img class="hero-pfp" src="img/customers/customer-1.jpg" alt="customer">
-            <img class="hero-pfp" src="img/customers/customer-2.jpg" alt="customer">
-            <img class="hero-pfp" src="img/customers/customer-3.jpg" alt="customer">
-            <img class="hero-pfp" src="img/customers/customer-4.jpg" alt="customer">
-            <img class="hero-pfp" src="img/customers/customer-5.jpg" alt="customer">
-            <img class="hero-pfp" src="img/customers/customer-6.jpg" alt="customer">
-          </div>
-          <div class="hero-delivered">
-            <p>
-              <span class="delivered-bold">250,000+</span> meals delivered last year
-            </p>
+  <main>
+    <section class="section-hero">
+      <div class="hero container grid grid-2-cols">
+        <div class="hero-text-box">
+          <h1 class="heading hero-heading">
+            A healthy meal delivered to your door, every single day
+          </h1>
+          <p class="para hero-description">
+            The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your
+            personal
+            tastes and nutritional needs.
+          </p>
+          <a href="#" class="hero-btn">Start eating well</a>
+          <a href="#" class="hero-btn hero-btn-2">Learn more &darr;</a>
+          <div class="hero-delivery">
+            <div class="hero-people">
+              <img class="hero-pfp" src="img/customers/customer-1.jpg" alt="customer">
+              <img class="hero-pfp" src="img/customers/customer-2.jpg" alt="customer">
+              <img class="hero-pfp" src="img/customers/customer-3.jpg" alt="customer">
+              <img class="hero-pfp" src="img/customers/customer-4.jpg" alt="customer">
+              <img class="hero-pfp" src="img/customers/customer-5.jpg" alt="customer">
+              <img class="hero-pfp" src="img/customers/customer-6.jpg" alt="customer">
+            </div>
+            <div class="hero-delivered">
+              <p>
+                <span class="delivered-bold">250,000+</span> meals delivered last year
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="hero-img-box">
-        <img class="hero-img" src="img/hero.png"
-          alt="image of girl eating food, meals in storage container, food bowls on a table">
+        <div class="hero-img-box">
+          <img class="hero-img" src="img/hero.png"
+            alt="image of girl eating food, meals in storage container, food bowls on a table">
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section-featuredin">
-    <div class="featured-head">As featured in</div>
-    <div class="featured-companies">
-      <img class="companies-logo" src="img/logos/techcrunch.png" alt="techcrunch">
-      <img class="companies-logo" src="img/logos/business-insider.png" alt="business-insider">
-      <img class="companies-logo" src="img/logos/the-new-york-times.png" alt="the-new-york-times">
-      <img class="companies-logo" src="img/logos/forbes.png" alt="forbes">
-      <img class="companies-logo" src="img/logos/usa-today.png" alt="usa-today">
-    </div>
-  </section>
+    <section class="section-featuredin">
+      <div class="container">
+        <div class="featured-head">As featured in</div>
+        <div class="featured-companies">
+          <img class="companies-logo" src="img/logos/techcrunch.png" alt="techcrunch">
+          <img class="companies-logo" src="img/logos/business-insider.png" alt="business-insider">
+          <img class="companies-logo" src="img/logos/the-new-york-times.png" alt="the-new-york-times">
+          <img class="companies-logo" src="img/logos/forbes.png" alt="forbes">
+          <img class="companies-logo" src="img/logos/usa-today.png" alt="usa-today">
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-how">
+      <div class="how-it-works">
+        <div class="how-title">How it works</div>
+        <div class="heading how-head">Your daily dose of health in 3 simple texts</div>
+
+        <div class="grid grid-2-cols how-text-app">
+          <div class="how-text">
+            <div class="how-text-head">01</div>
+            <div class="how-text-subhead">
+              Tell us what you like (and what not)
+            </div>
+            <div class="para how-text-para">
+              Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal
+              plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you
+              follow!
+            </div>
+          </div>
+          <div class="how-app"><img class="how-app-img" src="img/app/app-screen-1.png"
+              alt="menu of food on app of omnifood"></div>
+
+          <div class="how-app"><img class="how-app-img" src="img/app/app-screen-2.png"
+              alt="food item displayed on app of omnifood"></div>
+          <div class="how-text">
+            <div class="how-text-head">02</div>
+            <div class="how-text-subhead">
+              Approve your weekly meal plan
+            </div>
+            <div class="para how-text-para">
+              Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap
+              entire meals, or even add your own recipes.
+            </div>
+          </div>
+
+          <div class="how-text">
+            <div class="how-text-head">03</div>
+            <div class="how-text-subhead">
+              Receive meals at convenient time
+            </div>
+            <div class="para how-text-para">
+              Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever
+              works best for you. You can change delivery schedule and address daily!
+            </div>
+          </div>
+          <div class="how-app"><img class="how-app-img" src="img/app/app-screen-3.png"
+              alt="address and time dispalyed on omnifood app"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-meals">
+      <div class="meals-title">meals</div>
+      <div class="heading meals-head">Omnifood AI chooses from 5,000+ recipes</div>
+    </section>
+  </main>
 </body>
 
 </html>
