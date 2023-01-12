@@ -12,6 +12,8 @@
 -Default: 1
 -1.5
 -1.8
+-2
+-2.4
 
 --Letter Spacing
 -0.8px
@@ -23,12 +25,15 @@
 
 --Tints:
 -#fdf2e9
+-#fae5d3
 
 --Shades:
 -#cf711f
 
 --Accents: 
-#fae5d3
+-#51cf66
+-#94d82d
+-#ffd43b
 
 --Greys:
 -#555
@@ -36,13 +41,21 @@
 -#ddd
 
 --- 03 SHADOWS ---
+--Hero Button
+-inset 0 0 0 3px white
+
+--Card Shadow
+-0 2.4rem 3.2rem rgba(0,0,0,0.08)
 
 --- 04 BORDER-RADIUS ---
 --Button
 -0.8rem
 
 --Pfp
--0.5rem
+-50%
+
+--tag
+-10rem
 
 --- 05 WHITESPACE ---
 --Spacing System
@@ -86,6 +99,15 @@ body {
   font-weight: 700;
 }
 
+.title {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #cf711f;
+  letter-spacing: 0.8px;
+  padding-bottom: 1.6rem;
+}
+
 .para {
   font-size: 2rem;
   margin-bottom: 2.4rem;
@@ -109,4 +131,8 @@ body {
 
 .grid-4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+strong {
+  font-weight: 500;
 }

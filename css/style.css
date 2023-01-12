@@ -122,7 +122,7 @@
 
 .hero-pfp {
   width: 4.8rem;
-  border-radius: 5rem;
+  border-radius: 50%;
   margin-right: -1.6rem;
   border: 2px solid #fdf2e9;
 }
@@ -175,15 +175,6 @@
 
 .how-it-works {
   padding: 9.6rem 0;
-}
-
-.how-title {
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #cf711f;
-  letter-spacing: 0.8px;
-  padding-bottom: 1.6rem;
 }
 
 .how-head {
@@ -248,17 +239,140 @@
 /* ******************** */
 /*** MEALS SECTION ***/
 /* ******************** */
+.meals {
+  padding: 9.6rem 0;
+}
+
 .meals-title {
   text-align: center;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #cf711f;
-  letter-spacing: 0.8px;
-  padding-bottom: 1.6rem;
 }
 
 .meals-head {
   text-align: center;
   margin-bottom: 9.6rem;
+}
+
+.meals-img {
+  width: 100%;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.meal-container {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.cards-list {
+  gap: 8.4rem;
+}
+
+.tag {
+  color: #333;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10rem;
+}
+
+.gyozas-tag {
+  background-color: #51cf66;
+}
+
+.vegan-tag {
+  background-color: #94d82d;
+}
+
+.paleo-tag {
+  background-color: #ffd43b;
+}
+
+.meals-subhead {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #333;
+  padding: 1.6rem 0 2.4rem 0;
+}
+
+.food-importance {
+  gap: 0;
+  font-size: 1.8rem;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.ff-imp {
+  line-height: 2.4;
+}
+
+.food-importance2 {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  justify-self: center;
+}
+
+ion-icon {
+  color: #e67e22;
+  font-size: 2.4rem;
+}
+
+.card {
+  box-shadow: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.08);
+  border-radius: 0.8rem;
+}
+
+.list-head {
+  font-size: 3rem;
+  padding-bottom: 3.2rem;
+  padding-top: 1rem;
+}
+
+.see-all {
+  text-align: center;
+  padding-top: 4.8rem;
+}
+
+.see-all-recipe:link,
+.see-all-recipe:visited {
+  display: inline-block;
+  color: #e67e22;
+  padding-bottom: 0px;
+  font-size: 1.8rem;
+  text-transform: none;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: 0.5s;
+}
+
+.see-all-recipe:hover,
+.see-all-recipe:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+/* ******************** */
+/*** TESTIMONIALS SECTION ***/
+/* ******************** */
+.section-testimonials {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.testimonials {
+  max-width: 130rem;
+}
+
+.customer-img {
+  border-radius: 50%;
+  height: 6.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.gallery2 {
+  gap: 1.6rem;
+}
+
+.gallery-img {
+  width: 100%;
 }
