@@ -23,12 +23,14 @@
 --Primary: 
 -#e67e22
 
---Tints:
--#fdf2e9
--#fae5d3
+--Secondary:
+-#45260a
 
 --Shades:
+-#fdf2e9
+-#fae5d3
 -#cf711f
+-#eb984e
 
 --Accents: 
 -#51cf66
@@ -36,6 +38,7 @@
 -#ffd43b
 
 --Greys:
+-#6f6f6f
 -#555
 -#333
 -#ddd
@@ -59,7 +62,7 @@
 
 --- 05 WHITESPACE ---
 --Spacing System
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 144
 */
 
 /* ******************** */
@@ -73,6 +76,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -114,6 +118,34 @@ body {
   line-height: 1.5;
 }
 
+.extra-para {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.line-height-list {
+  line-height: 2.4;
+}
+
+.food-list {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  justify-self: center;
+}
+
+.list-font {
+  gap: 0;
+  font-size: 1.8rem;
+  line-height: 2;
+  font-weight: 400;
+}
+
+ion-icon {
+  color: #e67e22;
+  font-size: 2.4rem;
+}
+
 .grid {
   display: grid;
   gap: 9.6rem;
@@ -131,6 +163,24 @@ body {
 
 .grid-4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #e67e22;
+  padding: 1.6rem 3.2rem;
+  color: #fff;
+  border-radius: 0.8rem;
+  transition: 0.5s;
+}
+
+.btn:active,
+.btn:hover {
+  background-color: #cf711f;
 }
 
 strong {

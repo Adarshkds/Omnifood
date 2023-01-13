@@ -79,32 +79,13 @@
 
 .hero-btn:link,
 .hero-btn:visited {
-  display: inline-block;
-  font-size: 2rem;
-  font-weight: 600;
-  text-decoration: none;
-  background-color: #e67e22;
-  padding: 1.6rem 3.2rem;
-  color: #fff;
-  border-radius: 0.8rem;
-  transition: 0.5s;
-  margin-bottom: 8rem;
-}
-
-.hero-btn:active,
-.hero-btn:hover {
-  background-color: #cf711f;
-}
-
-.hero-btn-2:link,
-.hero-btn-2:visited {
   margin-left: 2rem;
   background-color: white;
   color: #555;
 }
 
-.hero-btn-2:active,
-.hero-btn-2:hover {
+.hero-btn:active,
+.hero-btn:hover {
   background-color: #fdf2e9;
   /* border: 2px solid white; */
   box-shadow: inset 0 0 0 3px white;
@@ -114,6 +95,7 @@
   display: flex;
   gap: 2rem;
   align-items: center;
+  padding-top: 8rem;
 }
 
 .hero-people {
@@ -162,7 +144,7 @@
 .featured-companies {
   display: flex;
   justify-content: space-between;
-  padding: 0 6.4rem;
+  /* padding: 0 4rem; */
 }
 
 .companies-logo {
@@ -293,32 +275,14 @@
   padding: 1.6rem 0 2.4rem 0;
 }
 
-.food-importance {
-  gap: 0;
-  font-size: 1.8rem;
-  line-height: 2;
-  font-weight: 400;
-}
-
-.ff-imp {
-  line-height: 2.4;
-}
-
-.food-importance2 {
-  display: flex;
-  gap: 2.4rem;
-  align-items: center;
-  justify-self: center;
-}
-
-ion-icon {
-  color: #e67e22;
-  font-size: 2.4rem;
-}
-
 .card {
   box-shadow: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.08);
   border-radius: 0.8rem;
+  transition: 0.7s;
+}
+
+.card:hover {
+  transform: translate(0rem, -2rem);
 }
 
 .list-head {
@@ -356,11 +320,29 @@ ion-icon {
 /* ******************** */
 .section-testimonials {
   background-color: #fdf2e9;
-  padding: 4.8rem 0 9.6rem 0;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
 }
 
-.testimonials {
-  max-width: 130rem;
+.testimonials-para {
+  letter-spacing: 0.8px;
+  font-size: 1.8rem;
+}
+
+.customers {
+  align-items: center;
+  column-gap: 8rem;
+  row-gap: 4.8rem;
+}
+
+.customer {
+  display: grid;
+}
+
+.review-testimonials {
+  padding: 6.4rem;
+  align-items: center;
 }
 
 .customer-img {
@@ -369,10 +351,189 @@ ion-icon {
   margin-bottom: 1.6rem;
 }
 
-.gallery2 {
-  gap: 1.6rem;
+.testimonials-heading {
+  margin-bottom: 4.8rem;
 }
 
-.gallery-img {
+.gallery {
+  gap: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1.6rem;
+}
+
+.gallery-item img {
+  display: block;
   width: 100%;
+  transition: 0.5s;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/* ******************** */
+/*** PRICING SECTION ***/
+/* ******************** */
+.pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-heading {
+  padding-bottom: 9.6rem;
+}
+
+.pricing-title {
+  padding: 4.8rem 0 3.2rem 0;
+  font-size: 2rem;
+}
+
+.pricing-grid {
+  align-items: center;
+  margin: 0 3.2rem;
+  padding: 0 12.8rem;
+  gap: 8rem;
+  margin-bottom: 4.8rem;
+}
+
+.pricing-grid-head {
+  font-weight: 600;
+  font-size: 6.4rem;
+  padding-bottom: 2rem;
+  /* text-align: center; */
+}
+
+.pricing-box {
+  text-align: center;
+}
+
+.pricing-list {
+  padding: 0 5.4rem;
+}
+
+.pricing-grid-head::first-letter {
+  font-size: 3.2rem;
+}
+
+.pricing-extra-para {
+  padding-bottom: 4.4rem;
+}
+
+.pricing-padding {
+  padding-bottom: 1rem;
+}
+
+.pricing-btn {
+  text-align: center;
+  padding: 4.8rem 0;
+}
+
+.starter {
+  border-radius: 0.8rem;
+  border: 2px solid #fdf2e9;
+}
+
+.complete {
+  /* border: 2px solid #fff; */
+  border-radius: 0.8rem;
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-extra-para {
+  text-align: center;
+}
+
+.complete::after {
+  content: "best value";
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333;
+  /* letter-spacing: 0.8px; */
+  background-color: #ffd43b;
+  padding: 0.8rem 4.4rem;
+
+  position: absolute;
+  top: 5%;
+  right: -10%;
+  transform: rotate(45deg);
+  /* transform: translate(-100%, 0); */
+}
+
+/* ******************** */
+/*** FEATURES SECTION ***/
+/* ******************** */
+.features {
+  gap: 6.4rem;
+  margin-bottom: 9.6rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  /* padding: -2.4rem 0; */
+}
+
+.features-icon {
+  padding: 1.6rem;
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+
+.features-head {
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding: 2.4rem 0 1.6rem 0;
+}
+
+.features-para {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* ******************** */
+/*** CTA SECTION ***/
+/* ******************** */
+.section-cta {
+  margin: 12.8rem 0;
+}
+
+.cta {
+  display: grid;
+  /* background-color: #cf711f; */
+  grid-template-columns: 65% 35%;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  color: #45260a;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+}
+
+.cta-img {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url(../img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-heading {
+  font-size: 4.4rem;
+  font-weight: 600;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta-para {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  padding: 0 6.4rem 6.4rem 6.4rem;
 }
