@@ -14,13 +14,14 @@
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/links.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/queries.css">
 
   <title>Omnifood</title>
 </head>
 
 <body>
   <header class="section-header">
-    <div class="header">
+    <div class="header open-">
       <div class="header-logo">
         <a href="#"><img class="logo" src="img/omnifood-logo.png" alt="omnifood"></a>
       </div>
@@ -32,6 +33,11 @@
         <li> <a class="header-nav-nav" href="#">Pricing</a></li>
         <li> <a class="header-nav-nav nav-last" href="#">Try for free</a></li>
       </ul>
+
+      <div class="menu-nav">
+        <ion-icon class="icon-menu-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-menu-nav" name="close-outline"></ion-icon>
+      </div>
     </div>
   </header>
 
@@ -47,8 +53,8 @@
             personal
             tastes and nutritional needs.
           </p>
-          <a href="#" class="btn">Start eating well</a>
-          <a href="#" class="btn hero-btn">Learn more &darr;</a>
+          <a href="#" class="btn query-btn">Start eating well</a>
+          <a href="#" class="btn hero-btn query-btn">Learn more &darr;</a>
           <div class="hero-delivery">
             <div class="hero-people">
               <img class="hero-pfp" src="img/customers/customer-1.jpg" alt="customer">
@@ -87,11 +93,13 @@
     </section>
 
     <section class="section-how">
-      <div class="container how-it-works">
-        <div class="title how-title">How it works</div>
-        <div class="heading how-head">Your daily dose of health in 3 simple texts</div>
+      <div class="how-it-works">
+        <div class="container body-title">
+          <div class="title how-title">How it works</div>
+          <div class="heading how-head">Your daily dose of health in 3 simple texts</div>
+        </div>
 
-        <div class="grid grid-2-cols how-text-app">
+        <div class="container grid grid-2-cols how-text-app">
           <div class="how-text">
             <div class="how-text-head">01</div>
             <div class="how-text-subhead">
@@ -137,33 +145,12 @@
 
     <section class="section-meals">
       <div class="meals">
-        <div class="title meals-title">meals</div>
-        <div class="heading meals-head">Omnifood AI chooses from 5,000+ recipes</div>
+        <div class="container body-title">
+          <div class="title meals-title">meals</div>
+          <div class="heading meals-head">Omnifood AI chooses from 5,000+ recipes</div>
+        </div>
 
         <div class="cards-list container grid grid-3-cols">
-          <div class="meals-list">
-            <div class="heading list-head">Works with any diet:</div>
-            <div class="line-height-list list-font">
-              <div class="food-list"><ion-icon name="checkmark-done-outline"></ion-icon><span>Vegetarian</span>
-              </div>
-              <div class="food-list"><ion-icon name="checkmark-done-outline"></ion-icon><span>Vegan</span>
-              </div>
-              <div class="food-list"><ion-icon name="checkmark-done-outline"></ion-icon><span>Pescatarian</span>
-              </div>
-              <div class="food-list"><ion-icon name="checkmark-done-outline"></ion-icon><span>Gluten-free</span>
-              </div>
-              <div class="food-list"><ion-icon name="checkmark-done-outline"></ion-icon><span>Lactose-free</span>
-              </div>
-              <div class="food-list"><ion-icon name="checkmark-done-outline"></ion-icon><span>Keto</span></div>
-              <div class="food-list"><ion-icon name="checkmark-done-outline"></ion-icon><span>Paleo</span>
-              </div>
-              <div class="food-list"><ion-icon name="checkmark-done-outline"></ion-icon><span>Low FODMAP</span>
-              </div>
-              <div class="food-list"><ion-icon name="checkmark-done-outline"></ion-icon><span>
-                  Kid-friendly</span></div>
-            </div>
-          </div>
-
           <div class="card card-gyozas">
             <img class="meals-img gyozas-img" src="img/meals/meal-1.jpg" alt="japanese gyozas">
             <div class="meal-container">
@@ -199,6 +186,36 @@
               </div>
             </div>
           </div>
+
+          <div class="meals-list">
+            <div class="heading list-head">Works with any diet:</div>
+            <div class="line-height-list list-font">
+              <div class="food-list diet-list"><ion-icon
+                  name="checkmark-done-outline"></ion-icon><span>Vegetarian</span>
+              </div>
+              <div class="food-list diet-list"><ion-icon name="checkmark-done-outline"></ion-icon><span>Vegan</span>
+              </div>
+              <div class="food-list diet-list"><ion-icon
+                  name="checkmark-done-outline"></ion-icon><span>Pescatarian</span>
+              </div>
+              <div class="food-list diet-list"><ion-icon
+                  name="checkmark-done-outline"></ion-icon><span>Gluten-free</span>
+              </div>
+              <div class="food-list diet-list"><ion-icon
+                  name="checkmark-done-outline"></ion-icon><span>Lactose-free</span>
+              </div>
+              <div class="food-list diet-list"><ion-icon name="checkmark-done-outline"></ion-icon><span>Keto</span>
+              </div>
+              <div class="food-list diet-list"><ion-icon name="checkmark-done-outline"></ion-icon><span>Paleo</span>
+              </div>
+              <div class="food-list diet-list"><ion-icon name="checkmark-done-outline"></ion-icon><span>Low
+                  FODMAP</span>
+              </div>
+              <div class="food-list diet-list"><ion-icon name="checkmark-done-outline"></ion-icon><span>
+                  Kid-friendly</span></div>
+            </div>
+          </div>
+
         </div>
         <div class="see-all container"><a class="title see-all-recipe" href="#">See all recipes &rarr;</a></div>
       </div>
@@ -207,7 +224,10 @@
     <section class="section-testimonials">
       <div class="review-testimonials">
         <div class="title">testimonials</div>
-        <div class="heading testimonials-heading">Once you try it, you can't go back</div>
+        <div class="heading testimonials-heading">
+          Once you try it, you can't go back
+        </div>
+
         <div class="customers grid grid-2-cols">
           <div class="customer">
             <img class="customer-img" src="img/customers/ben.jpg" alt="laughing man">
@@ -293,8 +313,11 @@
 
     <section class="section-pricing">
       <div class="container pricing">
-        <div class="title">pricing</div>
-        <div class="heading pricing-heading">Eating well without breaking the bank</div>
+        <div class="container body-title">
+          <div class="title">pricing</div>
+          <div class="heading pricing-heading">Eating well without breaking the bank</div>
+        </div>
+
         <div class="grid grid-2-cols pricing-grid">
           <div class="starter">
             <div class="pricing-box">
@@ -307,8 +330,7 @@
                   day</span>
               </div>
               <div class="food-list pricing-padding"><ion-icon name="checkmark-done-outline"></ion-icon><span>Order from
-                  11am to
-                  9pm</span></div>
+                  11am to 9pm</span></div>
               <div class="food-list pricing-padding"><ion-icon name="checkmark-done-outline"></ion-icon><span>Delivery
                   is free</span>
               </div>
@@ -436,16 +458,18 @@
 
   <footer class="section-footer">
     <div class="container grid footer">
-      <div class="footer-logo">
-        <a href="#">
-          <img class="logo logo-footer" src="img/omnifood-logo.png" alt="omnifood-logo">
-        </a>
-        <ul class="social-link">
-          <li><a class="footer-icon" href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-          <li><a class="footer-icon" href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-          <li><a class="footer-icon" href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-        </ul>
-        <p class="copyright">Copyright &copy; 2025 by Omnifood, INC. All rights reserved.</p>
+      <div class="container logo-col">
+        <div class="footer-logo">
+          <a href="#">
+            <img class="logo logo-footer" src="img/omnifood-logo.png" alt="omnifood-logo">
+          </a>
+          <ul class="social-link">
+            <li><a class="footer-icon" href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a class="footer-icon" href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a class="footer-icon" href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          </ul>
+          <p class="copyright">Copyright &copy; 2025 by Omnifood, INC. All rights reserved.</p>
+        </div>
       </div>
 
       <div class="contact">

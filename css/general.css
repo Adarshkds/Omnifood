@@ -75,7 +75,7 @@
 
 --- 05 WHITESPACE ---
 --Spacing System
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 144
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 54 / 64 / 80 / 96 / 128 / 144
 */
 
 /* ******************** */
@@ -93,15 +93,20 @@
 }
 
 html {
+  /* 10px/16px = 0.625 i.e. in percentage 62.5% */
+  /* Officially 1rem=16px and to make it 10px we use font-size 10px but in percentage */
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-weight: 400;
   font-family: "Rubik", sans-serif;
+  /* font-family: "PP Woodland", "ZCOOL XiaoWei", Baskerville; */
   line-height: 1;
   color: #555;
+  overflow-x: hidden;
 }
 
 /* ******************** */
@@ -120,12 +125,14 @@ body {
 .heading {
   font-size: 4.4rem;
   font-family: "Rubik", sans-serif;
+  /* font-family: "PP Woodland", "ZCOOL XiaoWei", Baskerville; */
   color: #333;
   line-height: 1.05;
   font-weight: 700;
 }
 
 .title {
+  /* font-family: "PP Woodland", "ZCOOL XiaoWei", Baskerville; */
   font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 500;

@@ -2,6 +2,7 @@
 /*** HEADER SECTION ***/
 /* ******************** */
 .header {
+  position: relative;
   background-color: #fdf2e9;
   height: 9.6rem; /*height is used because we want to make header sticky*/
   display: flex;
@@ -14,6 +15,20 @@
   display: flex;
   gap: 4.8rem;
   align-items: center;
+}
+
+.menu-nav {
+  cursor: pointer;
+  display: none;
+}
+
+.icon-menu-nav {
+  font-size: 4.8rem;
+  color: #333;
+}
+
+.icon-menu-nav[name="close-outline"] {
+  display: none;
 }
 
 /* ******************** */
@@ -35,8 +50,9 @@
 }
 
 .hero-heading {
-  font-size: 5.2rem;
+  font-size: 5.4rem;
   font-family: "ubuntu", sans-serif;
+  /* font-family: "PP Woodland", "ZCOOL XiaoWei", Baskerville; */
   margin-bottom: 3.2rem;
 }
 
@@ -81,7 +97,7 @@
 /*** FEATURED-IN SECTION ***/
 /* ******************** */
 .section-featuredin {
-  padding: 4.8rem 0 3.2rem 0;
+  margin: 4.8rem 0 3.2rem 0;
   filter: brightness(0);
   opacity: 50%;
 }
@@ -437,7 +453,7 @@
 /* ******************** */
 .section-cta {
   /* margin: 12.8rem 0; */
-  padding-bottom: 9.6rem;
+  padding-bottom: 12.8rem;
   /* border-bottom: 0.5px solid rgba(51, 51, 51, 0.1); */
 }
 
@@ -464,17 +480,21 @@
   background-position: center;
 }
 
+.cta-text-box {
+  padding: 0 6.4rem;
+}
+
 .cta-heading {
   font-size: 4.4rem;
   font-weight: 700;
   letter-spacing: 0.5px;
-  padding: 4.8rem 6.4rem 3.2rem 6.4rem;
+  padding: 4.8rem 0 3.2rem;
 }
 
 .cta-para {
   font-size: 1.8rem;
   line-height: 1.8;
-  padding: 0 6.4rem 3.2rem 6.4rem;
+  padding-bottom: 3.2rem;
 }
 
 /* Form Input */
@@ -565,7 +585,7 @@
 .copyright {
   font-size: 1.4rem;
   color: #767676;
-  margin-top: auto;
+  margin-top: 3.2rem;
   line-height: 1.5;
 }
 
@@ -585,6 +605,7 @@ address {
   font-size: 1.6rem;
   font-style: normal;
   line-height: 1.5;
+  color: #767676;
 }
 
 .address {
