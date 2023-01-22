@@ -129,11 +129,12 @@
   /* Navigation */
   .menu-nav {
     display: block;
+    /* z-index: 1000; */
   }
 
   .header-nav li .header-nav-nav {
     font-size: 3rem;
-    line-height: 1.2;
+    /* line-height: 1.2; */
   }
 
   .header-nav {
@@ -399,7 +400,11 @@
   .features {
     grid-template-columns: 1fr;
     gap: 2.4rem;
-    margin-bottom: 8rem;
+    /* margin-bottom: 3.2rem; */
+  }
+
+  .section-cta {
+    padding-top: 8rem;
   }
 
   .cta {

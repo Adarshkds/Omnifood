@@ -20,6 +20,10 @@
 .menu-nav {
   cursor: pointer;
   display: none;
+  color: #333;
+  background: none;
+  border: none;
+  z-index: 1;
 }
 
 .icon-menu-nav {
@@ -29,6 +33,16 @@
 
 .icon-menu-nav[name="close-outline"] {
   display: none;
+}
+
+/* Sticky Header */
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.97);
+  height: 7.2rem;
+  width: 100%;
+  box-shadow: 0 0.5rem 5rem rgba(0, 0, 0, 0.05);
+  z-index: 999;
 }
 
 /* ******************** */
@@ -421,7 +435,7 @@
 /* ******************** */
 .features {
   gap: 6.4rem;
-  margin-bottom: 12.8rem;
+  /* margin-bottom: 12.8rem; */
 }
 
 .feature {
@@ -452,8 +466,8 @@
 /*** CTA SECTION ***/
 /* ******************** */
 .section-cta {
-  /* margin: 12.8rem 0; */
-  padding-bottom: 12.8rem;
+  padding: 12.8rem 0;
+  /* padding-bottom: 12.8rem; */
   /* border-bottom: 0.5px solid rgba(51, 51, 51, 0.1); */
 }
 

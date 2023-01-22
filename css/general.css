@@ -8,17 +8,6 @@
 -700
 -600
 
---Line Height 
--Default: 1
--1.5
--1.8
--2
--2.4
-
---Letter Spacing
--0.8px
--0.5px
-
 --- 02 COLORS ---
 --Primary: 
 -#e67e22
@@ -43,6 +32,7 @@
 -#555
 -#333
 -#ddd
+-rgba(255, 255, 255, 0.97);
 
 --- 03 SHADOWS ---
 --*:focus
@@ -76,6 +66,17 @@
 --- 05 WHITESPACE ---
 --Spacing System
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 54 / 64 / 80 / 96 / 128 / 144
+
+--Line Height 
+-Default: 1
+-1.5
+-1.8
+-2
+-2.4
+
+--Letter Spacing
+-0.8px
+-0.5px
 */
 
 /* ******************** */
