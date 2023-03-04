@@ -1,14 +1,15 @@
-Omnifood Clone 🎉
+Omnifood Clone🎉-
 This website is a beginner project that aims to replicate the Omnifood website created by Jonas Schmedtmann. The goal of the project is to learn and practice HTML and CSS skills by creating a simple, responsive website that showcases a fictional healthy food delivery service.
 
-Technologies used 🎉
+Technologies used🎉-
 The website was built using the following technologies:
-HTML5
-CSS3
-Google Fonts (for typography)
-Ionicons (for icons)
+HTML5,
+CSS3,
+Google Fonts (for typography),
+Ionicons (for icons),
+Responsive Design
 
-Features 🎉
+Features🎉-
 The website has the following main features:
 Responsive design that adapts to different screen sizes and devices
 A landing page with a hero section, a features section, a meals section, and a signup section
